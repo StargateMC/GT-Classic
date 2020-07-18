@@ -93,6 +93,11 @@ public class GTTileAESU extends TileEntityElectricBlock implements IClickable {
 		}
 	}
 
+        @Override
+        public void update() {
+            
+        }
+        
 	public void updateGui() {
 		this.getNetwork().updateTileGuiField(this, "output");
 	}

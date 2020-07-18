@@ -76,7 +76,6 @@ public class GTTileMultiLESU extends TileEntityElectricBlock
 	@Override
 	public void update() {
 		checkArea();
-		super.update();
 	}
 
 	@Override

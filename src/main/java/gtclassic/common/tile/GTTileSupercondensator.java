@@ -11,6 +11,10 @@ public class GTTileSupercondensator extends TileEntityTransformer implements IBi
 		super(level(6), level(12), level(13));
 	}
 
+        @Override
+        public void update() {
+            
+        }
 	@Override
 	public BitLevel getOverride(int paramInt, String paramString) {
 		return BitLevel.Bit64;
