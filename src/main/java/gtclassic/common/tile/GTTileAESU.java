@@ -19,8 +19,7 @@ import net.minecraftforge.fml.relauncher.Side;
 public class GTTileAESU extends TileEntityElectricBlock implements IClickable {
 
 	public GTTileAESU() {
-		super(15, (int) EnergyNet.instance.getPowerFromTier(15), (int)EnergyNet.instance.getPowerFromTier(16));
-		this.output = (int)EnergyNet.instance.getPowerFromTier(6);
+		super(10, (int) EnergyNet.instance.getPowerFromTier(6), (int)EnergyNet.instance.getPowerFromTier(11));
 		this.addGuiFields(new String[] { "output" });
 	}
 

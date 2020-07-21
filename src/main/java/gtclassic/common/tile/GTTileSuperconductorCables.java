@@ -13,17 +13,17 @@ public class GTTileSuperconductorCables {
 
 		@Override
 		public double getConductorBreakdownEnergy() {
-			return EnergyNet.instance.getPowerFromTier(45);
+			return EnergyNet.instance.getPowerFromTier(13);
 		}
 
 		@Override
 		public double getInsulationBreakdownEnergy() {
-			return EnergyNet.instance.getPowerFromTier(45);
+			return EnergyNet.instance.getPowerFromTier(13);
 		}
 
 		@Override
 		public double getInsulationEnergyAbsorption() {
-			return EnergyNet.instance.getPowerFromTier(45);
+			return EnergyNet.instance.getPowerFromTier(13);
 		}
 
 		@Override
@@ -40,17 +40,17 @@ public class GTTileSuperconductorCables {
 
 		@Override
 		public double getConductorBreakdownEnergy() {
-			return EnergyNet.instance.getPowerFromTier(15) + 1;
+			return EnergyNet.instance.getPowerFromTier(10) + 1;
 		}
 
 		@Override
 		public double getInsulationBreakdownEnergy() {
-			return EnergyNet.instance.getPowerFromTier(15) + 1;
+			return EnergyNet.instance.getPowerFromTier(10) + 1;
 		}
 
 		@Override
 		public double getInsulationEnergyAbsorption() {
-			return EnergyNet.instance.getPowerFromTier(15) + 1;
+			return EnergyNet.instance.getPowerFromTier(10) + 1;
 		}
 
 		@Override
