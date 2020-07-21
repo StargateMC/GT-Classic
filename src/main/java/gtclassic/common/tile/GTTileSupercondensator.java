@@ -8,7 +8,7 @@ import ic2.core.block.base.tile.TileEntityTransformer;
 public class GTTileSupercondensator extends TileEntityTransformer implements IBitLevelOverride {
 
 	public GTTileSupercondensator() {
-		super(level(6), level(12), level(13));
+		super(level(15), level(45), level(46));
 	}
 
         @Override

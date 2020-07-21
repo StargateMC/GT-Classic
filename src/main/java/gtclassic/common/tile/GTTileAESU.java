@@ -19,8 +19,8 @@ import net.minecraftforge.fml.relauncher.Side;
 public class GTTileAESU extends TileEntityElectricBlock implements IClickable {
 
 	public GTTileAESU() {
-		super(4, (int) EnergyNet.instance.getPowerFromTier(4), 100000000);
-		this.output = 2048;
+		super(6, (int) EnergyNet.instance.getPowerFromTier(15), 1000000000);
+		this.output = (int)EnergyNet.instance.getPowerFromTier(6);
 		this.addGuiFields(new String[] { "output" });
 	}
 
@@ -76,19 +76,19 @@ public class GTTileAESU extends TileEntityElectricBlock implements IClickable {
 	public void onNetworkEvent(EntityPlayer player, int event) {
 		super.onNetworkEvent(player, event);
 		if (event == 4) {
-			this.output = GTHelperMath.clip(this.output + 64, 0, 2048);
+			this.output = GTHelperMath.clip(this.output + 64, 0, (int)EnergyNet.instance.getPowerFromTier(6));
 			updateGui();
 		}
 		if (event == 3) {
-			this.output = GTHelperMath.clip(this.output + 1, 0, 2048);
+			this.output = GTHelperMath.clip(this.output + 1, 0, (int)EnergyNet.instance.getPowerFromTier(6));
 			updateGui();
 		}
 		if (event == 2) {
-			this.output = GTHelperMath.clip(this.output - 1, 0, 2048);
+			this.output = GTHelperMath.clip(this.output - 1, 0, (int)EnergyNet.instance.getPowerFromTier(6));
 			updateGui();
 		}
 		if (event == 1) {
-			this.output = GTHelperMath.clip(this.output - 64, 0, 2048);
+			this.output = GTHelperMath.clip(this.output - 64, 0, (int)EnergyNet.instance.getPowerFromTier(6));
 			updateGui();
 		}
 	}
