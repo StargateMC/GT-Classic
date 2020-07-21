@@ -2,7 +2,7 @@ package gtclassic.common.block;
 
 import java.util.List;
 import java.util.Random;
-
+import ic2.api.energy.EnergyNet;
 import gtclassic.GTMod;
 import gtclassic.api.block.GTBlockBaseConnect;
 import gtclassic.api.interfaces.IGTReaderInfoBlock;
