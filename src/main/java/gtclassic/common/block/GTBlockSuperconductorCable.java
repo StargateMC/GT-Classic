@@ -153,13 +153,13 @@ public class GTBlockSuperconductorCable extends GTBlockBaseConnect implements IG
 	@Override
 	public void addReaderInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
 		if (this == GTBlocks.tileSuperconductorCableMAX) {
-			tooltip.add((Ic2InfoLang.euReaderCableLimit.getLocalizedFormatted(new Object[] { 134217728 })));
+			tooltip.add((Ic2InfoLang.euReaderCableLimit.getLocalizedFormatted(new Object[] { EnergyNet.instance.getPowerFromTier(13) })));
 		}
 		if (this == GTBlocks.tileSuperconductorCableIV) {
-			tooltip.add((Ic2InfoLang.euReaderCableLimit.getLocalizedFormatted(new Object[] { 32769 })));
+			tooltip.add((Ic2InfoLang.euReaderCableLimit.getLocalizedFormatted(new Object[] { EnergyNet.instance.getPowerFromTier(10) })));
 		}
 		if (this == GTBlocks.tileSuperconductorCableHV) {
-			tooltip.add((Ic2InfoLang.euReaderCableLimit.getLocalizedFormatted(new Object[] { 512 })));
+			tooltip.add((Ic2InfoLang.euReaderCableLimit.getLocalizedFormatted(new Object[] { EnergyNet.instance.getPowerFromTier(6) })));
 		}
 		tooltip.add((Ic2InfoLang.euReaderCableLoss.getLocalizedFormatted(new Object[] { 0.001 })));
 	}
