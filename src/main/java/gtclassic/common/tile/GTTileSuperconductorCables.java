@@ -2,6 +2,7 @@ package gtclassic.common.tile;
 
 import gtclassic.api.tile.GTTileBaseSuperconductorCable;
 import net.minecraft.init.Blocks;
+import ic2.api.energy.EnergyNet;
 
 public class GTTileSuperconductorCables {
 
@@ -12,17 +13,17 @@ public class GTTileSuperconductorCables {
 
 		@Override
 		public double getConductorBreakdownEnergy() {
-			return 134217729.0D;
+			return EnergyNet.instance.getPowerFromTier(20);
 		}
 
 		@Override
 		public double getInsulationBreakdownEnergy() {
-			return 134217729.0D;
+			return EnergyNet.instance.getPowerFromTier(20);
 		}
 
 		@Override
 		public double getInsulationEnergyAbsorption() {
-			return 134217729.0D;
+			return EnergyNet.instance.getPowerFromTier(20);
 		}
 
 		@Override
