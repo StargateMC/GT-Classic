@@ -8,7 +8,7 @@ import ic2.core.block.base.tile.TileEntityTransformer;
 public class GTTileSupercondensator extends TileEntityTransformer implements IBitLevelOverride {
 
 	public GTTileSupercondensator() {
-		super((8 << 15 * 2), (8 << 45 * 2), (8 << 46 * 2));
+		super(level(15), level(45), level(46));
 	}
 
         @Override
@@ -26,7 +26,7 @@ public class GTTileSupercondensator extends TileEntityTransformer implements IBi
 	}
 
 	public static int level(int tier) {
-		return (int) (8 << tier * 2);
+		return (int) EnergyNet.instance.getPowerFromTier(tier);
 	}
 
 	public void doFusionHeliumThings() {
